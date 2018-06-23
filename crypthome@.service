@@ -10,6 +10,7 @@ Requires=user-%i.slice
 Type=oneshot
 RemainAfterExit=yes
 TimeoutSec=0
+KeyringMode=shared
 ExecStart=/usr/local/sbin/crypthome-mount %i
 ExecStop=/usr/local/sbin/crypthome-umount %i
 
